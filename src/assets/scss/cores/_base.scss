@@ -6,12 +6,9 @@ html, body {
     font-weight: 400;
     color: $color-theme-dark;
 }
-.border {
-    border: 1px solid $color-theme !important;
-}
+
 a {
     color: $color-theme;
-    font-weight: $font-weight-regular;
     text-decoration: none;  
 
     &:hover {
@@ -19,4 +16,6 @@ a {
     text-decoration: underline;
     }
 }
-
+.border {
+    border: 1px solid $color-theme !important;
+}
