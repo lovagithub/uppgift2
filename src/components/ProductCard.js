@@ -1,22 +1,22 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const  ProductCard = () => {
     return (
    <div className="col">
    <div className="card">
      <div className="card-img">
-     <img src="assets/images/Placeholders/hmgoepprod.jfif" alt="hmgoepprod" />
+     <img src="assets/images/card-img" alt="" />
      <div className="card-menu">
-         <a href="#"><i className="fa-solid fa-heart"></i></a>
-         <a href="#"><i className="fa-solid fa-repeat"></i></a>
-         <a href="#"><i className="fa-solid fa-bag-shopping"></i></a>
+         <NavLink className="menu-link"><i className="fa-solid fa-heart"></i></NavLink>
+         <NavLink className="menu-link"><i className="fa-solid fa-repeat"></i></NavLink>
+         <NavLink className="menu-link"><i className="fa-solid fa-bag-shopping"></i></NavLink>
      </div>
-     <a className="__btn-theme btn-card-theme" href="">
-         <span className="__btn-theme-left"></span>            
-         <span className="__btn-theme-right"></span>
+     <NavLink className="btn-theme btn-card-theme" href="#">
+         <span className="corner-left"></span>            
+         <span className="corner-right"></span>
           QUICK VIEW
-     </a>
-
+     </NavLink>
      </div>
      <div className="card-body">
          <p className="card-category">Category</p>
