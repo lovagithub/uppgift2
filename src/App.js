@@ -9,8 +9,7 @@ import WishListView from './views/WishListView';
 import SearchView from './views/SearchView';
 import ProdactsView from './views/ProdactsView';
 import CategoriesView from './views/CategoriesView';
-import FooterSection from './sections/FooterSection';
-import MainMenuSection from './sections/MainMenuSection';
+import ComparesView from './views/CompareView';
 
 function App() {
   return (
@@ -21,12 +20,12 @@ function App() {
       <Route path="/products" element={<ProdactsView/>} />
       <Route path="/contacts" element={<ContactsView />} />
       <Route path="/search" element={<SearchView />} />
+      <Route path="/compare" element={<ComparesView />} />
       <Route path="/wishlist" element={<WishListView />} />
       <Route path="/shoppingcart" element={<ShoppingCartView />} />
       <Route path="*" element={<NotFoundView />} />
   
     </Routes>
-    <FooterSection />
     </BrowserRouter>
 );
   }
