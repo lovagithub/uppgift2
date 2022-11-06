@@ -1,5 +1,6 @@
+import React from 'react';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import './App.min.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import ContactsView from './views/ContactsView';
 import HomeView from './views/HomeView';
@@ -24,7 +25,7 @@ function App() {
       <Route path="/wishlist" element={<WishListView />} />
       <Route path="/shoppingcart" element={<ShoppingCartView />} />
       <Route path="*" element={<NotFoundView />} />
-  
+
     </Routes>
     </BrowserRouter>
 );
