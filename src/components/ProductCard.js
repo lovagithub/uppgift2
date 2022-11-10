@@ -1,18 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import TempImg from '../assets/images/Placeholders/hmgoepprod.jfif'
+
 
 const  ProductCard = () => {
     return (
    <div className="col">
    <div className="card">
      <div className="card-img">
-     <img src="assets/images/card-img" alt="" />
+     <img src={TempImg} alt="" />
      <div className="card-menu">
-         <NavLink className="menu-link"><i className="fa-solid fa-heart"></i></NavLink>
-         <NavLink className="menu-link"><i className="fa-solid fa-repeat"></i></NavLink>
-         <NavLink className="menu-link"><i className="fa-solid fa-bag-shopping"></i></NavLink>
+         <button className="menu-link"><i className="fa-solid fa-heart"></i></button >
+         <button className="menu-link"><i className="fa-solid fa-code-compare"></i></button >
+         <button className="menu-link"><i className="fa-solid fa-bag-shopping"></i></button >
      </div>
-     <NavLink className="btn-theme btn-card-theme" href="#">
+     <NavLink to="/products" className="btn-theme btn-card-theme">
          <span className="corner-left"></span>            
          <span className="corner-right"></span>
           QUICK VIEW
