@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom'
 import TempImg from '../assets/images/Placeholders/hmgoepprod.jfif'
 
 
-const  ProductCard = () => {
+const  ProductCard = ({item}) => {
     return (
    <div className="col">
    <div className="card">
      <div className="card-img">
-     <img src={TempImg} alt="" />
+     <img src={item.img} alt="item.name" />
      <div className="card-menu">
          <button className="menu-link"><i className="fa-solid fa-heart"></i></button >
          <button className="menu-link"><i className="fa-solid fa-code-compare"></i></button >
@@ -21,8 +21,8 @@ const  ProductCard = () => {
      </NavLink>
      </div>
      <div className="card-body">
-         <p className="card-category">Category</p>
-       <h5 className="card-title">Modern Black Blouse</h5>
+         <p className="card-category">{item.category}</p>
+       <h5 className="card-title">{item.name}</h5>
        <p className="card-rating">
          <i className="fa-solid fa-star"></i>
          <i className="fa-solid fa-star"></i>
@@ -30,7 +30,7 @@ const  ProductCard = () => {
          <i className="fa-solid fa-star"></i>
          <i className="fa-solid fa-star"></i>
        </p>
-       <p className="card-price">$35.00</p>
+       <p className="card-price">{item.price}</p>
 
      </div>
    </div>
