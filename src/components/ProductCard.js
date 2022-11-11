@@ -9,12 +9,12 @@ const  ProductCard = ({item}) => {
    <div className="card">
      <div className="card-img">
      <img src={item.img} alt="item.name" />
-     <div className="card-menu">
+     <div className="card-menu d-xl-none">
          <button className="menu-link"><i className="fa-solid fa-heart"></i></button >
          <button className="menu-link"><i className="fa-solid fa-code-compare"></i></button >
          <button className="menu-link"><i className="fa-solid fa-bag-shopping"></i></button >
      </div>
-     <NavLink to="/products" className="btn-theme btn-card-theme">
+     <NavLink to="/products" className="btn-theme btn-card-theme d-xl-none">
          <span className="corner-left"></span>            
          <span className="corner-right"></span>
           QUICK VIEW

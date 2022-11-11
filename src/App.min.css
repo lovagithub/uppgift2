@@ -180,7 +180,6 @@ a:hover {
   position: relative;
   border: none;
   outline: none;
-  text-decoration: none;
 }
 .product-grid .card img .card-menu .menu-link:hover,
 .product-grid .card .card-img .card-menu .menu-link:hover {
@@ -218,12 +217,20 @@ a:hover {
   font-weight: 600;
 }
 .product-grid .card:hover .card-menu {
-  display: block;
+  display: block !important;
 }
 .product-grid .card:hover .btn-card-theme {
-  display: flex;
+  display: flex !important;
 }
 
+@media (min-widht: 1200px) {
+  .product-grid .container {
+    max-width: 1110px;
+  }
+  .product-grid .card-menu {
+    display: none !important;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
