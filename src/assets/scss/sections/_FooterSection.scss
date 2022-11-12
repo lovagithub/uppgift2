@@ -3,10 +3,10 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--color-extralight-gray);
+        background-color: $color-extralight-gray;
      
     
-    social-media {
+    .social-media {
          margin-bottom: 25px;
     
             a  {
