@@ -18,7 +18,7 @@ const ContactFormSection = () => {
                     <div className="textarea">
                     <textarea id="comment" placeholder="Comments"></textarea>                   
                     </div>
-                    <div>
+                    <div className="formBtn">
                         <button type="submit" className="btn-theme">Post Comments</button> 
                      </div>
                 </form>

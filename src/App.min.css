@@ -305,10 +305,16 @@ a:hover {
   border: 1px solid rgba(112, 112, 112, 0.4);
   resize: none;
 }
+.contact-form .formBtn {
+  grid-column: 1/-1;
+}
 
 @media (min-width: 768px) {
   .contact-form form {
     grid-template-columns: 1fr 1fr;
+  }
+  .contact-form form .formBtn {
+    width: 210px;
   }
 }
 .breadcrumb {
