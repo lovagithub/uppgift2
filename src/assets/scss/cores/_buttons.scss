@@ -1,4 +1,5 @@
-.btn-theme btn-card-theme {
+
+.btn-theme {
     position: relative;
     width: 100%;
     text-align: center;
@@ -6,8 +7,9 @@
     color: $color-white;
     padding: 20px 50px;
     transition: all 0.2s ease-in-out;
-
-
+    border:  none;
+ 
+.btn-theme btn-card-theme {
    
     .corner-left {
         position: absolute;
@@ -34,6 +36,6 @@
         color: $color-white !important;
         background-color: $color-dark;
         text-decoration: none;
-
+    }
     }
 }
