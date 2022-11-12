@@ -4,6 +4,7 @@ import MainMenuSection from '../sections/MainMenuSection'
 
 const CategoriesView = () => {
     return (
+
         <>
         <MainMenuSection />
         <FooterSection /> 
