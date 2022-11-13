@@ -2,14 +2,14 @@ import React from 'react'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
-import ProductTitle from '../components/ProductTitle'
+import ProductTiles from '../sections/ProductTiles'
 
-const ProdactsView = ({items = []}) => {
+const ProdactsView = () => {
     return (
         <>
          <MainMenuSection />
         <BreadcrumbSection currentPage="Products" />
-         <ProductTitle title="Products" items={items} />
+         <ProductTiles title="Products" />
         <FooterSection /> 
         </>
         
