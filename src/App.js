@@ -14,7 +14,7 @@ import CategoriesView from './views/CategoriesView';
 import ComparesView from './views/CompareView';
 
 function App() {
-  const [products, setFeaturedProduct] = useState([
+  const [products, setProduct] = useState([
     { id: 1, name: "Modern Blacke Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://cdn.pixabay.com/photo/2012/09/21/14/10/leaves-57427__340.jpg"},
     { id: 2, name: "Modern Blacke Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://cdn.pixabay.com/photo/2017/03/11/17/49/maple-2135514__340.jpg"},
     { id: 3, name: "Modern Blacke Blouse", category: "Fashion", price: "$35.00", rating: 5, img: "https://media.istockphoto.com/id/105770350/sv/foto/little-girl-wearing-grown-up-mans-business-suit.jpg?s=612x612&w=0&k=20&c=7wXHUd6QDfB2N1J0-vYReLv1wTbYaUqHJUjVG4I4HFw="},

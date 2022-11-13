@@ -1,8 +1,7 @@
-import React, { useState } from "react"
-import ProductCard from "../components/ProductCard"
+import React from "react"
+import ProductTitle from "../components/ProductTitle"
 import FooterSection from "../sections/FooterSection"
 import MainMenuSection from "../sections/MainMenuSection"
-import ProductGridSection from "../sections/ProductGridSection"
 import ShowCaseSection from "../sections/ShowCaseSection"
 
 const HomeView = ({items = []}) => {
@@ -12,9 +11,9 @@ const HomeView = ({items = []}) => {
         <header>
         <MainMenuSection />
        <ShowCaseSection />
+       </header>
+       <ProductTitle title="Featured Products" items={items} />
        
-       <ProductGridSection title="Featured Products" items={items} />
-        </header>
         <FooterSection />
       
         

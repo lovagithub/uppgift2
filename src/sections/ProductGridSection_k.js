@@ -1,6 +1,7 @@
 import React from 'react'
+import ProductCard from '../components/ProductCard'
 
-const ProductGridSection = ({title, items = []}) => {
+const  ProductGridSection = ({title, items = []}) => {
     return ( 
         
         <section className="product-grid">
