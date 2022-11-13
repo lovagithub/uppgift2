@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ProductTile from '../components/ProductTile'
-import { ProductContext } from '../context/contexts'
 
 
 const ProductTiles= ({title, items = []}) => {
@@ -13,7 +12,7 @@ const ProductTiles= ({title, items = []}) => {
             <h1>{title}</h1>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
         {
-         product.featuredProducts.map( product => <ProductTile key={product.articleNumber} items={product} />)
+         items.map( product => <ProductTile key={product.articleNumber} item={product} />)
             
     }
          
