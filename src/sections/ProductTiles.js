@@ -1,10 +1,11 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import ProductTile from '../components/ProductTile'
-import { ProductContext }  from '../context/contexts'
+import { ProductContext } from '../context/contexts'
 
-const ProductTiles= ({title}) => {
-    const products = useContext(ProductContext)
-    console.log("ProductTilessss runnig")
+
+const ProductTiles= ({title, items = []}) => {
+   
+    console.log("ProductTiles runnig")
     return ( 
         
         <section className="product-grid">
@@ -12,7 +13,7 @@ const ProductTiles= ({title}) => {
             <h1>{title}</h1>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
         {
-         products.map( product => <ProductTile key={product.articleNumber} items={product} />)
+         product.featuredProducts.map( product => <ProductTile key={product.articleNumber} items={product} />)
             
     }
          

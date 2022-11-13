@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import BreadcrumbSection from '../sections/BreadcrumbSection'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import ProductTiles from '../sections/ProductTiles'
+import { ProductContext } from '../context/contexts'
 
 const ProdactsView = () => {
+    const ProductContext = useContext(ProductContext)
     return (
         <>
          <MainMenuSection />
         <BreadcrumbSection currentPage="Products" />
-         <ProductTiles title="Products" />
+         <ProductTiles title="Products" items={ProductContext.all} />
         <FooterSection /> 
         </>
         
