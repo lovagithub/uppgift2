@@ -21,6 +21,7 @@ const MainMenuSection = () => {
                 <MenuIcon quantity="4" link="/shoppingcart" icon="fa-solid fa-bag-shopping" />
          </div>          
     </nav>
+
     )
 }
 
