@@ -12,7 +12,7 @@ import ProdactsView from './views/ProdactsView';
 import ProductDetailsView from './views/ProductDetailsView';
 import CategoriesView from './views/CategoriesView';
 import ComparesView from './views/CompareView';
-import { ProductContext } from './context/contexts'
+import { ProductContext } from './contexts/Context'
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
       setProducts({...products, featuredProducts: await result.json()})
     }
     fetchFeatureProduct ();
-  }, [setProducts])
+  }, [products,setProducts])
 
   return (
     <BrowserRouter>
@@ -47,7 +47,7 @@ function App() {
       <Route path="/compare" element={<ComparesView />} />
       <Route path="/wishlist" element={<WishListView />} />
       <Route path="/shoppingcart" element={<ShoppingCartView />} />
-      <Route path="/product:name" elemnt={<ProductDetailsView/>} />
+      <Route path="/product:name" element={<ProductDetailsView/>} />
       <Route path="*" element={<NotFoundView />} />
 
     </Routes>

@@ -3,7 +3,7 @@ import BreadcrumbSection from '../sections/BreadcrumbSection'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import ProductTiles from '../sections/ProductTiles'
-import { ProductContext } from '../context/contexts'
+import { ProductContext } from '../contexts/Context'
 
 const ProdactsView = () => {
     const ProductContext = useContext(ProductContext)
