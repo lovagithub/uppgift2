@@ -23,17 +23,20 @@ function App() {
   })
 
   useEffect(() => {
-    const fetchAllProduct  = async () => {
-      let result = await fetch('https://win22-webapi/azurewebsites/api/products')
+    const fetchAllProducts  = async () => {
+      let result = await fetch('https://win22-webapi/azurewebsites.net/api/products')
       setProducts({...products, all: await result.json()})
     }
-    fetchAllProduct ();
-    const fetchFeatureProduct  = async () => {
-      let result = await fetch('https://win22-webapi/azurewebsites/api/products?take=8')
+
+    fetchAllProducts ()
+    const fetchFeatureProducts = async () => {
+      let result = await fetch('https://win22-webapi/azurewebsites.net/api/products?take=8')
       setProducts({...products, featuredProducts: await result.json()})
     }
-    fetchFeatureProduct ();
-  }, [products,setProducts])
+
+    fetchFeatureProducts ()
+
+  }, [setProducts])
 
   return (
     <BrowserRouter>

@@ -6,12 +6,12 @@ import ProductTiles from '../sections/ProductTiles'
 import { ProductContext } from '../contexts/Context'
 
 const ProdactsView = () => {
-    const ProductContext = useContext(ProductContext)
+    const productContext = useContext(ProductContext)
     return (
         <>
          <MainMenuSection />
         <BreadcrumbSection currentPage="Products" />
-         <ProductTiles title="Products" items={ProductContext.all} />
+         <ProductTiles title="Products" items={productContext.all} />
         <FooterSection /> 
         </>
         
