@@ -12,6 +12,7 @@ const NotFoundView = () => {
          <div style={{ position: "fixed", bottom: 0}}>
          <FooterSection /> 
          </div>
+         
         
    
         </>

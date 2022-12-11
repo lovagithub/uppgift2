@@ -24,13 +24,13 @@ function App() {
 
   useEffect(() => {
     const fetchAllProducts  = async () => {
-      let result = await fetch('https://win22-webapi/azurewebsites.net/api/products')
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products')
       setProducts({...products, all: await result.json()})
     }
 
     fetchAllProducts ()
     const fetchFeatureProducts = async () => {
-      let result = await fetch('https://win22-webapi/azurewebsites.net/api/products?take=8')
+      let result = await fetch('https://win22-webapi.azurewebsites.net/api/products?take=8')
       setProducts({...products, featuredProducts: await result.json()})
     }
 
